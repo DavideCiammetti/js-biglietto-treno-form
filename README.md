@@ -1,5 +1,9 @@
 #  calcolo del prezzo del biglietto del treno
 
+#### 1. Descrizione Progetto
+#### 2. Immagine di riferimento
+#### 3. Descrizione Passaggi Inizio Progetto
+
 ## descrizione progetto
 
 Scrivere un programma che chieda all’utente:
@@ -19,4 +23,23 @@ Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente
 5. **MILESTONE** 2:
 Solo una volta che il milestone 1 sarà completo e funzionante allora realizzeremo un form in pagina in cui l’utente potrà inserire i dati e visualizzare il calcolo finale con il prezzo, come da screenshot allegato. Il recap dei dati e l’output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 
+### immagine di riferimento 
 
+![layout.img](<img-layout/screenshot (1).png>)
+
+## descrizione passaggi inizio progetto
+
+1. inizio con lo sviluppo della pagina HTML della MILESTONE 1 quindi inserendo solamente i 2 input e il bottone.
+per il codice css prenderò quello utilizzato nel progetto precedente forse apportando qualche modifica che elencherò sotto
+
+    - il primo input (partendo da sinistra guardando l'immagine) sara solo di tipo testuale 
+    - il secondo input invece sara si di tipo numerico ma ci permette di tramite 2 frecce nel rettangolo di scorrere i numeri 
+    - il terzo input sarà invece una lista di 3 elementi (Maggiorenne, Minorenne, over 65)
+
+2. una volta che il programma funzionerà con lo scheletro HTML procedo alla creazione della pagina per intero, tenendo a mente che il secondo rettangolo con il titolo h2 non sarà inizialmente visibile e apparirà solamente quando si preme il bottone |GENERA| 
+
+## HTML
+
+## CSS
+
+## JAVASCRIPT
