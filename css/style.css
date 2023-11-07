@@ -2,26 +2,36 @@ body{
     background-color: var(--red-700);
     font-family: 'Fredoka', sans-serif;
 }
-
 :root{
     --red-700: #b91547;
 }
-
 /* hover */
 button.dc-col:hover{
     border: 2px solid orange;
 }
 /* hover */
 
-#sectionOne{            /*sezione 1 larghezza*/
+#sectionOne,
+#sectionTwo{            /*sezione 1 larghezza*/
     width: 52.3125rem;
 }
 
 .dc-border-col{     /*border color bottoni*/
     border: 1px solid var(--red-700);
 }
-.dc-col{
+.dc-col{            /*bottoni sezione 1*/
     color: var(--red-700);
     background-color: #c5c5c5;
     border: 2px solid transparent;
+}
+
+.dc-line-height{            /*allineamento testo sezione 2*/
+    line-height: 15px;
+}
+.dc-bg-col-grey{                    /*bg color sezione 2 primo div*/
+    background-color: grey;
+}
+.dc-border-t-b{                                                                     
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
