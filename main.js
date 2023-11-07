@@ -13,22 +13,24 @@ let prezzoTotale = 0;
 let prezzoScontato = 0;
 
 
-prezzoTotale = kmDaPercorrere * 0.21;  
-console.log('il prezzo totale è: ' + prezzoTotale);
-
 buttonGenera.addEventListener('click', function () {
+    console.log('nome e cognome: ' + nomeCognome.value);
+    console.log('i km da percorrere sono: ' + kmDaPercorrere.value + 'Km');
 
-if(etaPasseggero === 'minorenne'){
-    prezzoScontato = (prezzoTotale * 20 / (100));
-    prezzoTotale = prezzoTotale - prezzoScontato;
-    console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2));
+    prezzoTotale = kmDaPercorrere.value * 0.21;  
+    console.log('il prezzo totale è: ' + prezzoTotale.toFixed(2) + '€');
 
-}
-else if(etaPasseggero === 'over 65'){
-    prezzoScontato = (prezzoTotale * 40 / (100));
-    prezzoTotale = prezzoTotale - prezzoScontato;
-    console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2));
-}
+    if(etaPasseggero.value === 'minorenne'){
+        prezzoScontato = (prezzoTotale * 20 / (100));
+        prezzoTotale = prezzoTotale - prezzoScontato;
+        console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2) + '€');
+
+    }
+    else if(etaPasseggero.value === 'over'){
+        prezzoScontato = (prezzoTotale * 40 / (100));
+        prezzoTotale = prezzoTotale - prezzoScontato;
+        console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2) + '€');
+    }
 
 
 });
