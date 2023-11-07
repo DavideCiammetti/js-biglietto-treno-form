@@ -38,10 +38,6 @@ per il codice css prenderò quello utilizzato nel progetto precedente forse appo
 
 2. una volta che il programma funzionerà con lo scheletro HTML procedo alla creazione della pagina per intero, tenendo a mente che il secondo rettangolo con il titolo h2 non sarà inizialmente visibile e apparirà solamente quando si preme il bottone |GENERA| 
 
-## HTML
-
-## CSS
-
 ## JAVASCRIPT
 
 ecco i vari passaggi che ho usato per il codice js
@@ -53,3 +49,23 @@ ecco i vari passaggi che ho usato per il codice js
 3.  tramite --- buttonGenera.addEventListener('click', function (){}) --- questa operazione creo una funzione che al click del bottone mostra in console i dati che ho richiesto 
 
 4. all'interno dell'operazione 3 inserisco la condizione "if" per la quale se il passeggero è minorenne avra un tipo di prezzo e se over 65 avrà un altro tipo di prezzo 
+
+
+  if(kmDaPercorrere.value < 0 ){
+        costoBiglietto.innerHTML = 'inserire km';
+    }else{
+        prezzoTotale = kmDaPercorrere.value * 0.21;  
+        console.log('il prezzo totale è: ' + prezzoTotale.toFixed(2) + '€');
+    }
+
+    dalla riga 46 alla 50 ma comprende tutto il blocco if, gestisce i km, se un passeggero mette i km sotto lo 0 allora in costo appare la stringa "inserire km"
+    altrimenti il programma viene eseguito normalmente 
+
+    ## sezione aggiunta da me 
+
+    vorrei gestire i tipi di biglietto aprendo quindi una scermata che una volta selezionato il tipo del biglietto aggiunge al prezzo una quantità x:
+    - biglietto standard Low cost : aggiunta 0;
+    - biglietto 2a classe : aggiunta 0.10€ al km 
+    - biglietto 1a classe : aggiunta 0.17€ al km 
+
+    magari posso sviluppare una ulteriore sezione per la quale il passeggero ha la possibilità di scegliere il tragitto del treno e alla fine far quindi apparire una sezione che dice il tragito l'ora del treno e tutti i dettagli compressi
