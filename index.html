@@ -17,28 +17,30 @@
 <body>
 
     <!-- main -->
-    <main>
+    <main class="d-flex align-items-center flex-column ">
+        <h1 class="pt-2 pb-2 text-light"><strong>CALCOLA IL PREZZO DEL TUO BIGLIETTO</strong></h1>
         <!-- sezione 1 -->
-        <section id="sectionOne">
-            <form class="d-flex">
+        <section id="sectionOne" class="bg-light text-center pt-4 pb-4 rounded-3">
+
+            <form class="d-flex justify-content-around">
                       <!-- 1 input nome e cognome -->
-            <div class="mb-3">
-                <label for="NameSurname">Nome e Cognome</label>
-                <input type="text" class="" id="NameSurname" aria-label="Dollar amount (with dot and two decimal places)">
+            <div class="mb-3 d-flex flex-column">
+                <label class="pb-3" for="NameSurname">Nome e Cognome</label>
+                <input type="text" class="rounded-1 dc-border-col" id="NameSurname" aria-label="Dollar amount (with dot and two decimal places)">
             </div>
               <!-- 1 input nome e cognome -->
 
               <!-- 2 select km -->
-            <div class="mb-3">
-                <label for="kmTotali" class="form-label">Km da percorrere</label>
-                <input type="number" class="dc-cap-w" id="kmTotali" >
+            <div class="mb-3 d-flex flex-column">
+                <label class="pb-3" for="kmTotali" class="form-label">Km da percorrere</label>
+                <input type="number" class="dc-cap-w rounded-1 shadow-none dc-border-col" id="kmTotali">
             </div>
               <!-- 2 select km -->
 
               <!-- 3 select eta -->
-            <div>
-                <label for="eta">Fascia d'età</label>
-                <select class=""  id="eta" aria-label="Default select example">
+            <div class="d-flex flex-column">
+                <label class="pb-3" for="eta">Fascia d'età</label>
+                <select class="pt-1 pb-1 rounded-1 dc-border-col"  id="eta" aria-label="Default select example" >
                     <option value="minorenne">minorenne</option>
                     <option value="maggiorenne">maggiorenne</option>
                     <option value="over">over 65</option>
@@ -48,12 +50,18 @@
         </form>
             
             <!-- button -->
-            <div class="d-block">
-                <button type="button" id="buttonGenera" value="" class="btn btn-secondary btn-sm">Genera</button>
-                <button type="button" id="buttonAnnulla" class="btn btn-secondary btn-sm">Annulla</button>
+            <div class="d-block pt-4">
+                <button type="button" id="buttonGenera" value="" class="btn btn-secondary btn-sm me-3 shadow-none dc-col">Genera</button>
+                <button type="button" id="buttonAnnulla" class="btn btn-secondary btn-sm shadow-none dc-col">Annulla</button>
             </div>
         </section>
         <!-- sezione 1 -->
+        <h2>STRONG IL TUO BIGLIETTO</h2>
+        <!-- section 2 -->
+        <section id="section-two"  class="bg-light text-center pt-4 pb-4 rounded-3 ">
+
+        </section>
+        <!-- section 2 -->
     </main>
     <!-- main -->
 

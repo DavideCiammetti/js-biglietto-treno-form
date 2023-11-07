@@ -34,3 +34,11 @@ buttonGenera.addEventListener('click', function () {
 
 
 });
+
+buttonAnnulla.addEventListener( 'click', function(){
+    nomeCognome.value = null;
+    kmDaPercorrere.value = null;
+    etaPasseggero.value = null;
+}
+
+)
