@@ -43,3 +43,13 @@ per il codice css prenderò quello utilizzato nel progetto precedente forse appo
 ## CSS
 
 ## JAVASCRIPT
+
+ecco i vari passaggi che ho usato per il codice js
+
+1. prendo con delle variabili gli elementi html tramite il loro ID in questo modo --> let buttonGenera = document.getElementById('buttonGenera');
+
+2. successivamente inizializzo a 0 le variabili ch emi serviranno per il prezzo totale e per quellos contato
+
+3.  tramite --- buttonGenera.addEventListener('click', function (){}) --- questa operazione creo una funzione che al click del bottone mostra in console i dati che ho richiesto 
+
+4. all'interno dell'operazione 3 inserisco la condizione "if" per la quale se il passeggero è minorenne avra un tipo di prezzo e se over 65 avrà un altro tipo di prezzo 
